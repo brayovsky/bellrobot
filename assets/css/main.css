@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #robot {
   height: 100px;
   width: 100px;
@@ -12,6 +16,20 @@
 #grid {
   height: 500px;
   width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 10px;
+  background: #f0f8ff;
+  margin: 5px 0px;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=main.css.map */

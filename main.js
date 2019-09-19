@@ -1,7 +1,7 @@
 const characterId = 'robot', moveTime = 1000;
 const sprite = {
-  offsetX: 100,
-  offsetY: 100,
+  charSizeX: 100,
+  charSizeY: 100,
   stepsX: 6,
   currentXPosition: 0,
   currentYPosition: 0,
@@ -29,7 +29,7 @@ const animate = () => {
   if(sprite.currentXPosition === (sprite.stepsX + 1)) {
     sprite.currentXPosition = 0;
   }
-  document.getElementById(characterId).style.backgroundPosition = `-${sprite.offsetX * sprite.currentXPosition}px -${sprite.offsetY * sprite.currentYPosition}px`;
+  document.getElementById(characterId).style.backgroundPosition = `-${sprite.charSizeX * sprite.currentXPosition}px -${sprite.charSizeY * sprite.currentYPosition}px`;
   sprite.currentXPosition++;
 };
 
