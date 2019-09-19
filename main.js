@@ -20,10 +20,10 @@ const grid = {
     x: 0,
     y: 0
   }
-}
+};
 
 /**
- * Animates walking movement
+ * Animates walking movement in any direction
  */
 const animate = () => {
   if(sprite.currentXPosition === (sprite.stepsX + 1)) {
@@ -34,7 +34,7 @@ const animate = () => {
 };
 
 /**
- * Shifts direction of movement
+ * Moves character by 1 unit in specified direction
  * @param {string} direction One of the directions in sprite directions
  * 
  */
