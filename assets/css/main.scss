@@ -1,0 +1,19 @@
+$gridBox: 100px;
+$gridSize: 5;
+$transitionTime: 1s;
+
+#robot {
+  height: $gridBox;
+  width: $gridBox;
+  background-image: url('../img/sprite.png');
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left $transitionTime, top $transitionTime;
+  transition-timing-function: linear;
+}
+
+#grid {
+  height: $gridBox * $gridSize;
+  width: $gridBox * $gridSize;
+}
