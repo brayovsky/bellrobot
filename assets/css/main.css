@@ -1,5 +1,5 @@
-.robot {
-  height: 50px;
-  width: 50px;
+#robot {
+  height: 100px;
+  width: 100px;
   background-image: url('../img/sprite.png');
 }
