@@ -16,7 +16,7 @@ test('Movement along x-axis', async t => {
   await t.expect(IndexPage.robot.getStyleProperty('left')).eql('0px');
 });
 
-test('Robot not move outside grid', async t => {
+test('Robot does not move outside grid', async t => {
   await IndexPage.goLeft(1);
   await t.expect(IndexPage.robot.getStyleProperty('left')).eql('0px');
   await IndexPage.goUp(1);
