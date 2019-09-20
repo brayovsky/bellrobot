@@ -1,0 +1,39 @@
+$gridBox: 100px;
+$gridSize: 5;
+$transitionTime: 1s;
+$font: Arial, Helvetica, sans-serif;
+
+body {
+  font-family: $font;
+}
+
+#robot {
+  height: $gridBox;
+  width: $gridBox;
+  background-image: url("../img/sprite.png");
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: left $transitionTime, top $transitionTime;
+  transition-timing-function: linear;
+}
+
+#grid {
+  height: $gridBox * $gridSize;
+  width: $gridBox * $gridSize;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 10px;
+  background: #f0f8ff;
+  margin: 5px 0px;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
